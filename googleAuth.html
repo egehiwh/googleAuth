@@ -21,7 +21,26 @@
   import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
   
   // Add your own Firebase config here
- 
+  <script type="module">
+    // Import the necessary Firebase modules
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+
+    // Your Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyBlDFEyPEV30OXw96rcbhxYt7KcaMpgL9U",
+        authDomain: "su-academic-study.firebaseapp.com",
+        projectId: "su-academic-study",
+        storageBucket: "su-academic-study.appspot.com",
+        messagingSenderId: "65311226535",
+        appId: "1:65311226535:web:566ec95c522df1c66e7982",
+        measurementId: "G-XSHZY78LJ0"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+        
 
 
 
